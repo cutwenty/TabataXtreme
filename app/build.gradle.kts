@@ -59,6 +59,11 @@ android {
         resources {
             excludes += "/META-INF/{AL2.0,LGPL2.1}"
         }
+        jniLibs {
+            // Don't strip this prebuilt native lib: the strip tool's output is
+            // NDK-version-dependent, which breaks reproducible builds on F-Droid.
+            keepDebugSymbols += "**/libdatastore_shared_counter.so"
+        }
     }
 }
 
