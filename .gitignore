@@ -17,3 +17,7 @@ local.properties
 # Build artifacts (belong on GitHub Releases, not in the repo)
 *.apk
 *.aab
+
+# Signed release output dirs (from the Generate Signed APK wizard)
+/app/*/release/
+/app/release/
