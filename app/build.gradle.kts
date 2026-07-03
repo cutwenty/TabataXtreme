@@ -17,6 +17,13 @@ android {
         versionName = "1.6.1"
     }
 
+    // F-Droid rejects the AGP "Dependency metadata" signing block (Play-specific,
+    // non-reproducible). Keep it out of the APK.
+    dependenciesInfo {
+        includeInApk = false
+        includeInBundle = false
+    }
+
     flavorDimensions += "distribution"
     productFlavors {
         create("gms") {
