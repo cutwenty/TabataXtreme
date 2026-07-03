@@ -13,3 +13,7 @@
 .externalNativeBuild
 .cxx
 local.properties
+
+# Build artifacts (belong on GitHub Releases, not in the repo)
+*.apk
+*.aab
