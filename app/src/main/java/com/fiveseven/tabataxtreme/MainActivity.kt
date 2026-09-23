@@ -1,7 +1,6 @@
 // SPDX-License-Identifier: MIT
 package com.fiveseven.tabataxtreme
 
-import android.content.pm.ActivityInfo
 import android.media.AudioManager
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -22,7 +21,6 @@ class MainActivity : ComponentActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        requestedOrientation = ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
         enableEdgeToEdge()
 
         val app = application as BaseApp

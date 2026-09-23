@@ -49,6 +49,8 @@ android {
         }
         debug {
             isDebuggable = true
+            // 调试包与商店版并存，避免签名不同导致安装失败或误删原有训练配置。
+            applicationIdSuffix = ".split"
         }
     }
 
